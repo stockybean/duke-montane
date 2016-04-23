@@ -11,31 +11,12 @@
 <meta name="copyright" content="" />
 <link rel="stylesheet" type="text/css" href="css/global.css" media="all" />
 <meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" type="text/css" href="css/global.css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.everything.io/kickstart/3.x/js/kickstart.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <link rel="import" href="ga.html">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
-	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
-	<script>
-	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-	if(!oldieCheck) {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-	} else {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-	}
-	</script>
-	<script>
-	if(!window.jQuery) {
-	if(!oldieCheck) {
-	  document.write('<script src="assets/js/libs/jquery-2.0.2.min.js"><\/script>');
-	} else {
-	  document.write('<script src="assets/js/libs/jquery-1.10.1.min.js"><\/script>');
-	}
-	}
-	</script>
-<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" media="all" />
-<script type="text/javascript" src="assets/js/kickstart.js"></script>
-<script src="assets/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu();
@@ -43,10 +24,6 @@
 		</script>
 </head>
 <body>
-<div class="hide-on-desktop grid clearfix logobg">
-		<div class="col_12 top-banner"><img class="banner-logo" src="assets/img/logodark.png"/></div>
-	</div>
-
 	<div class="mobile-header">
 			<div class="hide-navbar-mobile menu-title"><a href="#menu"><h3><i class="icon-list"></i> Menu</h3></a>
 			<nav id="menu">
@@ -91,16 +68,19 @@
 		<div class="gridflex title hide-navbar-desktop">
 			<div class="grid">
 				<div class="col_12"><h1>Contact Us</h1></div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div class="grid content clearfix">
 			<div class="col_6">
-				<p>Jaymes Duke, B.A.</p>
-				<p>Direct: 250-421-4701</p>
-				<p>Toll Free Direct: 1-855-259-5865</p>
-				<p>Email: <a href="mailto:jaymes@dukemontane.com">jaymes@dukemontane.com</a></p>
+				<div class="color-aqua">
+					Jaymes Duke, B.A.<br/>
+					Direct: 250-421-4701<br/>
+					Toll Free Direct: 1-855-259-5865<br/>
+					Email: <a href="mailto:jaymes@dukemontane.com">jaymes@dukemontane.com</a>
+				</div>
 
-				<h3>Duke Montane Financial Inc. Office Locations</h3>
+				<h3>Duke Montane Office Locations</h3>
 
 				<h4>BC Office</h4>
 				<address>9865 Osprey Landing Drive, Box 115<br>
@@ -151,19 +131,5 @@
 			</div>	
 		</div>
 	</div>
-	<!-- Change UA-XXXXX-X to be your site's ID -->
-	<!--<script>
-	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-	});
-	</script>-->
-
-	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
-	<!--[if lt IE 7 ]>
-	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
   </body>
 </html>

@@ -11,31 +11,11 @@
 <meta name="copyright" content="" />
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="css/global.css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.everything.io/kickstart/3.x/js/kickstart.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <link rel="import" href="ga.html">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
-	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
-	<script>
-	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-	if(!oldieCheck) {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-	} else {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-	}
-	</script>
-	<script>
-	if(!window.jQuery) {
-	if(!oldieCheck) {
-	  document.write('<script src="assets/js/libs/jquery-2.0.2.min.js"><\/script>');
-	} else {
-	  document.write('<script src="assets/js/libs/jquery-1.10.1.min.js"><\/script>');
-	}
-	}
-	</script>
-<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" media="all" />
-<script type="text/javascript" src="assets/js/kickstart.js"></script>
-<script src="assets/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu();
@@ -91,41 +71,70 @@
 		<div class="gridflex title hide-navbar-desktop">
 			<div class="grid">
 				<div class="col_12"><h1>Our Philosophy</h1></div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 		<div class="grid content clearfix">
-			<div class="col_8">
-				<p>As a company that achieves its success through delivering a service, we pride ourselves in meeting the highest of standards in that regard. Our philosophy helps define, shape, and adjust our specific process to serving clients.</p>
-				<h4>High Priority Values</h4>
-				<p>These are key efforts that we find keeps us a preferred option for clients as compared with different firms/banks/brokers/advisors on the market.</p>
-				<ol>
-				<li>Full and transparent disclosure</li>
-				<li>The client’s best-interest first</li>
-				<li>Explain the different options selected, help compare them against alternatives, and provide the answers needed to decide</li>
-				<li>Tax-efficiency</li>
-				</ol>
+			<div class="col_12">
+				<div class="col_2"></div>
+				<div class="col_8">
+					<p>As a company that achieves its success through delivering a service, we pride ourselves in meeting the highest of standards in that regard. Our philosophy helps define, shape, and adjust our specific process to serving clients.</p>
+				<div class="shadow"></div>
+				</div>
+			</div>
+			<div class="col_12">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3>High priority values</h3>
+					</div>
+					<div class="panel-body">
+						<p class="margin0">These are key efforts that we find keeps us a preferred option for clients as compared with different firms/banks/brokers/advisors on the market.</p>
+						<div class="spacer10"></div>
+						<ol>
+						<li>Full and transparent disclosure</li>
+						<li>The client’s best-interest first</li>
+						<li>Explain the different options selected, help compare them against alternatives, and provide the answers needed to decide</li>
+						<li>Tax-efficiency</li>
+						</ol>
+					</div>
+				</div>
 
-				<h4>Defining our service fundamentals:</h4>
-				<ol>
-				<li>A complete financial plan</li>
-				<li>Executing and maintaining the plan</li>
-				<li>The ongoing pursuit of professional knowledge (Being a master of our craft)</li>
-				<li>Accessibility and timely-advice that delivers extreme value</li>
-				</ol>
+				<div class="panel">
+					<div class="panel-heading">
+						<h3>Defining our service fundamentals</h3>
+					</div>
+					<div class="panel-body">
+						<ol>
+						<li>A complete financial plan</li>
+						<li>Executing and maintaining the plan</li>
+						<li>The ongoing pursuit of professional knowledge (Being a master of our craft)</li>
+						<li>Accessibility and timely-advice that delivers extreme value</li>
+						</ol>
+					</div>
+				</div>
 				
-				<h4>Insurance:</h4>
-				<p>It is important to us that clients are able to utilize the products that protect them from risks, especially when these products can provide exceptional value as part of the financial plan, achieving the peace of mind that everything is in place.</p>
-				<h4>Working for a competitive edge in Asset Allocation:</h4>
-				<p>We believe one mainstay of retirement planning is to keep clients on track through 3 beliefs:</p>
-				<p>1) Avoiding unnecessary risk 2) A full consideration of options in order to identify the right ones 3) Client contact – helping the plan stay on track</p>
-				<p>Some performance steps we take:</p>
-				<ul>
-				<li>Log annual or semi-annual meetings that keep the goals on track.</li>
-				<li>Perform analysis of fund management with the aim of enabling asset allocation that will deliver results.</li>
-				<li>Maintaining a comprehensive ability to analyze diversification correctly in our global economy.</li>
-				</ul>
-
-				
+				<div class="panel">
+					<div class="panel-heading">
+						<h3>Insurance</h3>
+					</div>
+					<div class="panel-body">
+						<p class="margin0">It is important to us that clients are able to utilize the products that protect them from risks, especially when these products can provide exceptional value as part of the financial plan, achieving the peace of mind that everything is in place.</p>
+						<div class="spacer10"></div>
+						<h4>Working for a competitive edge in Asset Allocation:</h4>
+						<p>We believe one mainstay of retirement planning is to keep clients on track through 3 beliefs:</p>
+						<ol>
+							<li>Avoiding unnecessary risk</li>
+							<li>A full consideration of options in order to identify the right ones</li>
+							<li>Client contact – helping the plan stay on track</li>
+						</ol>
+						<p>Some performance steps we take:</p>
+						<ul>
+						<li>Log annual or semi-annual meetings that keep the goals on track.</li>
+						<li>Perform analysis of fund management with the aim of enabling asset allocation that will deliver results.</li>
+						<li>Maintaining a comprehensive ability to analyze diversification correctly in our global economy.</li>
+						</ul>
+					</div>
+				</div>				
 			</div>
 			<div class="col_4"></div>
 		</div>
@@ -153,19 +162,5 @@
 			</div>	
 		</div>
 	</div>
-	<!-- Change UA-XXXXX-X to be your site's ID -->
-	<!--<script>
-	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-	});
-	</script>-->
-
-	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
-	<!--[if lt IE 7 ]>
-	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
   </body>
 </html>

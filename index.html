@@ -11,32 +11,12 @@
 <meta name="copyright" content="" />
 <meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" type="text/css" href="css/global.css" media="all" />
-<link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" media="all" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://cdn.everything.io/kickstart/3.x/js/kickstart.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <link rel="import" href="ga.html">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
-	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
-	<script>
-	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
-	if(!oldieCheck) {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
-	} else {
-	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
-	}
-	</script>
-	<script>
-	if(!window.jQuery) {
-	if(!oldieCheck) {
-	  document.write('<script src="assets/js/libs/jquery-2.0.2.min.js"><\/script>');
-	} else {
-	  document.write('<script src="assets/js/libs/jquery-1.10.1.min.js"><\/script>');
-	}
-	}
-	</script>
-<script src="assets/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/js/tabcontent.js"></script>
-<script type="text/javascript" src="assets/js/kickstart.js"></script>
-<script type="text/javascript" src="assets/js/jquery.mmenu.min.all.js"></script>
 <script type="text/javascript">
 			$(function() {
 				$('nav#menu').mmenu();
@@ -44,8 +24,10 @@
 </script>
 </head>
 <body>
-	<div class="grid clearfix logobg">
-		<div class="col_12 top-banner"><img class="banner-logo" src="assets/img/logodark.png"/></div>
+	<div class="clearfix logobg">
+		<div class="grid">
+			<div class="col_12 top-banner"><img class="banner-logo" src="assets/img/logodark.png"/></div>
+		</div>
 	</div>
 
 	<div class="mobile-header">
@@ -71,7 +53,7 @@
 	</div>
 
 	<div class="grid">	
-		<div class="menu navbar cl-effect-21 shadow hide-navbar-desktop">
+		<div class="menu navbar cl-effect-21 hide-navbar-desktop">
 			<li class="col_2"><a class="current" href="#">Home</a></li>
 			<li class="col_2"><a href="planning.html">Start Planning</a>
 				<ul>
@@ -87,17 +69,18 @@
 			<li class="col_2"><a href="contact.html">Contact</a></li>
 			<div class="clearfix"></div>
 		</div>
+		<div class="shadow"></div>
 	</div>
 
-	<div class="grid shadow content">
+	<div class="grid content">
 		<div class="clearfix">
-			<div class="col_8">
+			<div class="col_8 animated">
 					<ul class="tabs" data-persist="true">
          		 	 	<li><a class="button" href="#view1">Company Overview</a></li>
            				<li><a class="button" href="#view2">History</a></li>
        				 </ul>
        	 		<div class="tabcontents">
-		            <div id="view1">
+		            <div id="view1" class="hinge">
 		                <p>Duke Montane Financial Inc. exists to ensure clients have an optimal approach to their financial goals. We are highly accessible and work hard for every client. Our very purpose is to have superior solutions to the challenges of securing growth and income for your retirement, your estate, and your loved ones.  Whether or not your interests include discussing the details of investing, insurance, and tax, we want to lend a hand in order for you to do the bigger thing – truly live life.</p>
 		                <p class="span">This enables the discussions you want, the answers you need.</p>
 		                <p>We utilize a personable yet systematic client-relationship structure, built on the fundamentals of saving and retirement planning.  Our accessibility to clients is a strongpoint, and our zeal for being the best keeps us committed.</p>
@@ -106,7 +89,7 @@
 		                
 		                <p>We are attentive to an individual’s specific goals. We build and maintain our relationships by following-through, striving to be the best in personal service, and aiding in the successful attainment of financial goals. We are a powerful resource for the pursuit of a balanced life, a better retirement, and wonderful experiences.</p>
 		            </div>
-		            <div id="view2">
+		            <div id="view2" class="pulse">
 		                <p>The history of Duke Montane Financial Inc. began in 1984. The company was founded collaboratively as DT Associates Financial Counsel Inc. in Edmonton, Alberta, specializing in insurance, investments, and tax filing.</p>
 		                <p>In 2009, the acquisition of another insurance business in Southeastern British Columbia expanded the company, and facilitated the opening of an office in Wardner, BC near Lake Koocanusa. The insurance-licenced divisions of both companies came together under the single name of Duke Montane Financial Inc. in 2014.</p>
 		                <p>We pride ourselves on top-shelf service to our valued clients across the two provinces. Montane represents an ecozone containing 5 of B.C’s 8 coal mines, rich in forestry, cattle ranching, and the Rocky Mountains of the two popular National Parks in Alberta. It provides us a uniquely smooth sound to our company to characterize our stand-out service.</p>
@@ -148,19 +131,5 @@
 			</div>	
 		</div>
 	</div>
-	<!-- Change UA-XXXXX-X to be your site's ID -->
-	<!--<script>
-	window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-	Modernizr.load({
-	  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-	});
-	</script>-->
-
-	<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
-	   chromium.org/developers/how-tos/chrome-frame-getting-started -->
-	<!--[if lt IE 7 ]>
-	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-	<![endif]-->
   </body>
 </html>
