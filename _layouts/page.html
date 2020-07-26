@@ -14,10 +14,12 @@ layout: base
   </div>
 </header>
 
-<!-- Any Ready-to-Use sections -->
-{% for section in page.sections %}
-    {% include {{ section.type }} section=section site=site page=page %}
-{% endfor %}
+<div class="page-sections flex-grow-1">
+  <!-- Any Ready-to-Use sections -->
+  {% for section in page.sections %}
+      {% include {{ section.type }} section=section site=site page=page %}
+  {% endfor %}
+</div>
 
 <!-- include content as section -->
 {% assign content = content | strip_newlines %}

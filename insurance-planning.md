@@ -33,5 +33,5 @@ sections:
     - Understand the difference between mortgage insurance and individually-owned insurance
     - Receive help with the prospect of approval for coverage if you have a health concern or something in your past such as a hereditary disease, heart condition, or cancer treatment
     - Fully look at the risks of taxation at death or the lower-cost transfer of an estate and the various ways to set it up so there is a plan in place that is private and efficient with processing and taxes
-    - Family protection: Don’t put off a bit of life and health insurance planning and leave your young family more vulnerable to hardships from the unexpected. Simply gather the information and spending time to meet and discuss things so that your family is comfortable is worth the time.
+    - Family protection&colon; Don’t put off a bit of life and health insurance planning and leave your young family more vulnerable to hardships from the unexpected. Simply gather the information and spending time to meet and discuss things so that your family is comfortable is worth the time.
 ---
