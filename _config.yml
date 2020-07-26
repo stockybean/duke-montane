@@ -1,0 +1,25 @@
+# Site settings
+title: Duke Montane
+full_title: Duke Montane Financial Inc.
+description: Alberta &amp; British Columbia Financial Advisor
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "https://dukemontane.com/" # the base hostname & protocol for your site
+logo: logo-dark.svg
+icon: logo-icon.svg
+lang: en_US
+
+# Build settings
+safe: true # always trues on github-pages, disables _plugins/
+markdown: kramdown
+sass:
+  indentWidth: 2
+  style: compressed
+  precision: 10
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - build-in-docker.sh
+  - README.md

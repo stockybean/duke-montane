@@ -1,0 +1,12 @@
+<div class="container space-bottom-2">
+  <div class="w-md-80 w-lg-50 mx-md-auto mb-5 mb-md-9">
+    {% for item in section.list_items  %}
+      <div class="d-flex mb-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="NaN">
+        <div class="process-circle process-small bg-brand"></div>
+        <div class="ml-3">
+          <p class="text-lh-lg mb-0">{{ item }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
